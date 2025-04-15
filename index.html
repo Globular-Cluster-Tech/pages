@@ -2,27 +2,22 @@
 layout: null
 ---
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{{ site.url }}/en/"/>
+    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/en/">
     <script>
-        // 获取浏览器语言
-        var userLang = navigator.language || navigator.userLanguage;
-        userLang = userLang.toLowerCase().split('-')[0];
-        
-        // 根据浏览器语言重定向
-        if (userLang === 'zh') {
+        var lang = navigator.language.slice(0, 2);
+        if (lang === 'zh') {
             window.location.href = '{{ site.baseurl }}/zh/';
         } else {
             window.location.href = '{{ site.baseurl }}/en/';
         }
     </script>
-    <meta http-equiv="refresh" content="0; url={{ site.baseurl }}/en/">
 </head>
 <body>
-    <p>正在跳转到相应的语言版本...</p>
-    <p>Redirecting to the appropriate language version...</p>
-    <p><a href="{{ site.baseurl }}/en/">Click here if you are not redirected automatically.</a></p>
+    <p>If you are not redirected automatically, follow this link: <a href='{{ site.baseurl }}/en/'>English Version</a> / <a href='{{ site.baseurl }}/zh/'>中文版</a>.</p>
 </body>
 </html> 
