@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+<main role="main">
+    {% include services.html %}
+    
+    <!-- 其他部分可以根据需要添加 -->
+    {% comment %}
+    {% include portfolio.html %}
+    {% include about.html %}
+    {% include team.html %}
+    {% include contact.html %}
+    {% endcomment %}
+</main>
+
+{{ content }} 

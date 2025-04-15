@@ -1,25 +1,22 @@
 ---
 # _config.yml
 
-# 多语言支持配置（使用 octopress-multilingual）
+# 多语言支持配置
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-polyglot
 
-languages:
-  en: English
-  zh: 中文
-multilingual:
-  default_lang: en
-  exclude_from_localization:
-    - assets
-    - images
-    - favicon.ico
+languages: ["en", "zh"]
+default_lang: "en"
+exclude_from_localization:
+  - assets
+  - images
+  - favicon.ico
 
 # 网站基本信息
-url: "https://globularcluster.ca/"
-baseurl: "https://globularcluster.ca/"
+url: "https://globularcluster.ca"
+baseurl: ""
 
 # 网站标题与描述
 title: "Globular Cluster Technology Software Limited"
