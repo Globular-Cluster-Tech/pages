@@ -5,7 +5,7 @@
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - octopress-multilingual
+  - jekyll-polyglot
 
 languages:
   en: English
