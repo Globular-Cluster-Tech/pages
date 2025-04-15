@@ -19,7 +19,7 @@ multilingual:
 
 # 网站基本信息
 url: "https://globularcluster.ca/"
-baseurl: "/globular-cluster-site"
+baseurl: "https://globularcluster.ca/"
 
 # 网站标题与描述
 title: "Globular Cluster Technology Software Limited"
