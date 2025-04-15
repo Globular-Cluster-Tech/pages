@@ -7,7 +7,7 @@ plugins:
   - jekyll-seo-tag
 
 # 语言设置
-active_lang: "en"  # 默认语言
+# active_lang: "en"  # 移除全局设置，让页面 Front Matter 控制
 languages: ["en", "zh"]
 
 # 排除不需要处理的文件
