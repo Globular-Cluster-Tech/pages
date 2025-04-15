@@ -1,39 +1,70 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that.
-# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
-# If you change this file, please restart the server process.
+---
+# _config.yml
 
-# Site settings
-# are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# 多语言支持配置（使用 octopress-multilingual）
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - octopress-multilingual
 
-theme: jekyll-agency
+languages:
+  en: English
+  zh: 中文
+multilingual:
+  default_lang: en
+  exclude_from_localization:
+    - assets
+    - images
+    - favicon.ico
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog
+# 网站基本信息
+url: "https://globularcluster.ca/"
+baseurl: "/globular-cluster-site"
 
-title      : Your Awesome Website
-email      : your-email@example.com #this is also the email contact forms will go to
-description: "Site description"
-author     : Your Name
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
+# 网站标题与描述
+title: "Globular Cluster Technology Software Limited"
+email: "support@globularcluster.ca"
+description: "Intelligent Systems, Digital Transformation & AI Integration"
+author:
+  name: "Kasen Li"
+  email: "kasen@globularcluster.ca"
 
-locale: "en-US" # See available languages in _data/sitetext.yml
+remote_theme: raviriley/agency-jekyll-theme
 
-analytics:
-  google: #Google Analytics tracking code here
+# 页面导航设置（主语言）
+navigation:
+  - text: About
+    url: "#about"
+  - text: Services
+    url: "#services"
+  - text: Portfolio
+    url: "#portfolio"
+  - text: Team
+    url: "#team"
+  - text: Contact
+    url: "#contact"
 
-collections:
-  portfolio:
+# 联系方式
+contact:
+  name: "Globular Cluster"
+  address: "Vancouver, Canada"
+  email: "support@globularcluster.ca"
+  # phone: "+1 (123) 456-7890"
+
+# social:
+#   github: yourusername
+#   linkedin: yourlinkedin
+#   twitter: yourtwitter
+
+github:
+  is_project_page: true
 
 markdown: kramdown
+kramdown:
+  input: GFM
 
-# Uncomment following line to use Formspree form ID based URL instead of email based URL
-# Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
-# formspree_form_path: "f/a_form_id"
+languages:
+  en: English
+  zh: 中文
+multilingual:
+  default_lang: en
