@@ -24,10 +24,10 @@ baseurl: "https://globularcluster.ca/"
 # 网站标题与描述
 title: "Globular Cluster Technology Software Limited"
 email: "support@globularcluster.ca"
-description: "Intelligent Systems, Digital Transformation & AI Integration"
+description: "提供服务：AWS云平台成本节省，公司IT业务优化，公司网站设计和建设"
 author:
   name: "Kasen Li"
-  email: "kasen@globularcluster.ca"
+  email: "support@globularcluster.ca"
 
 remote_theme: raviriley/agency-jekyll-theme
 
@@ -37,8 +37,8 @@ navigation:
     url: "#about"
   - text: Services
     url: "#services"
-  - text: Portfolio
-    url: "#portfolio"
+  # - text: Portfolio
+  #   url: "#portfolio"
   - text: Team
     url: "#team"
   - text: Contact
@@ -46,7 +46,7 @@ navigation:
 
 # 联系方式
 contact:
-  name: "Globular Cluster"
+  name: "Globular Cluster Technology Software Limited"
   address: "Vancouver, Canada"
   email: "support@globularcluster.ca"
   # phone: "+1 (123) 456-7890"
@@ -57,14 +57,8 @@ contact:
 #   twitter: yourtwitter
 
 github:
-  is_project_page: true
+  is_project_page: false
 
 markdown: kramdown
 kramdown:
   input: GFM
-
-languages:
-  en: English
-  zh: 中文
-multilingual:
-  default_lang: en

@@ -1,0 +1,11 @@
+- title: AWS Cloud Cost Savings
+  icon: fa fa-cloud # Example icon, can be changed
+  description: Significantly reduce your AWS cloud expenses through optimized resource configuration and usage strategies.
+
+- title: IT Business Optimization
+  icon: fa fa-cogs # Example icon
+  description: Analyze existing IT processes, propose and implement improvement plans to enhance efficiency and reliability.
+
+- title: Website Design & Development
+  icon: fa fa-laptop # Example icon
+  description: Provide professional website design and development services to build online platforms that match your corporate image and business needs. 

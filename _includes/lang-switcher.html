@@ -1,12 +1,7 @@
-<!-- _includes/lang-switcher.html -->
-<ul class="lang-switcher" style="list-style: none; display: flex; gap: 10px; margin: 0; padding: 0;">
+<ul class="lang-switcher">
     {% for lang in site.languages %}
-      {% if lang != site.lang %}
-        <li>
-          <a href="{{ site.baseurl }}/{{ lang }}/" style="text-decoration: none;">
-            {{ site.languages[lang] }}
-          </a>
-        </li>
-      {% endif %}
+      {% unless lang == site.active_lang %}
+        <li><a href="{{ site.url }}{{ site.baseurl }}/{{ lang }}{{ page.permalink | default: page.url }}">{{ lang }}</a></li>
+      {% endunless %}
     {% endfor %}
   </ul>
