@@ -5,14 +5,18 @@
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-polyglot
 
+# 语言设置
+active_lang: "en"  # 默认语言
 languages: ["en", "zh"]
-default_lang: "en"
-exclude_from_localization:
-  - assets
-  - images
-  - favicon.ico
+
+# 排除不需要处理的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - assets/css/style.css.map
 
 # 网站基本信息
 url: "https://globularcluster.ca"
