@@ -20,11 +20,15 @@
   
         <!-- 多语言切换 -->
         <ul class="navbar-nav lang-switcher">
+          {% assign current_page_name = page.name | default: 'index.html' %}
+          {% assign current_path_parts = page.path | split: '/' %}
+          {% assign current_path = current_path_parts | last %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ '/en/' | relative_url }}">EN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/zh/' | relative_url }}">中文</a>
+            {% if site.active_lang == 'zh' %}
+            <a class="nav-link" href="{{ '/en/' | append: current_path | relative_url }}">EN</a>
+            {% else %}
+            <a class="nav-link" href="{{ '/zh/' | append: current_path | relative_url }}">中文</a>
+            {% endif %}
           </li>
         </ul>
       </div>
