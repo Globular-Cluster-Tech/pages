@@ -4,6 +4,7 @@ source "https://rubygems.org"
 gem "jekyll-remote-theme"
 gem "jekyll", "~> 4.3.2"
 gem "jekyll-agency"
+gem "jekyll-polyglot"
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
