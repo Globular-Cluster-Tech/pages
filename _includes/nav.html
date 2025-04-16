@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <!-- 网站 Logo 或品牌名 -->
-      <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      <a class="navbar-brand" href="/{{ site.active_lang }}/">{{ site.title }}</a>
   
       <!-- 响应式导航按钮 -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,21 +13,18 @@
         <ul class="navbar-nav ml-auto">
           {% for item in site.navigation %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.text }}</a>
+            <a class="nav-link" href="/{{ site.active_lang }}{{ item.url }}">{{ item.text }}</a>
           </li>
           {% endfor %}
         </ul>
   
         <!-- 多语言切换 -->
         <ul class="navbar-nav lang-switcher">
-          {% assign current_page_name = page.name | default: 'index.html' %}
-          {% assign current_path_parts = page.path | split: '/' %}
-          {% assign current_path = current_path_parts | last %}
           <li class="nav-item">
             {% if site.active_lang == 'zh' %}
-            <a class="nav-link" href="{{ '/en/' | append: current_path | relative_url }}">EN</a>
+            <a class="nav-link" href="{{ page.url | replace_first: '/zh/', '/en/' }}">EN</a>
             {% else %}
-            <a class="nav-link" href="{{ '/zh/' | append: current_path | relative_url }}">中文</a>
+            <a class="nav-link" href="{{ page.url | replace_first: '/en/', '/zh/' }}">中文</a>
             {% endif %}
           </li>
         </ul>
