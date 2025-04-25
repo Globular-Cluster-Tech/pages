@@ -21,10 +21,10 @@
         <!-- 多语言切换 -->
         <ul class="navbar-nav lang-switcher">
           <li class="nav-item">
-            {% if site.active_lang == 'zh' %}
-            <a class="nav-link" href="{{ page.url | replace_first: '/zh/', '/en/' }}">EN</a>
+            {% if site.active_lang == 'zh-CN' %}
+            <a class="nav-link" href="{{ page.url | replace_first: '/zh-CN/', '/en/' }}">English</a>
             {% else %}
-            <a class="nav-link" href="{{ page.url | replace_first: '/en/', '/zh/' }}">中文</a>
+            <a class="nav-link" href="{{ page.url | replace_first: '/en/', '/zh-CN/' }}">中文</a>
             {% endif %}
           </li>
         </ul>

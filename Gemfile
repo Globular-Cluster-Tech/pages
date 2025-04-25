@@ -2,14 +2,19 @@
 source "https://rubygems.org"
 
 gem "jekyll-remote-theme"
-gem "jekyll", "~> 4.3.2"
+gem "jekyll"
 gem "jekyll-agency"
 gem "jekyll-polyglot"
+gem "csv"
+gem "logger"
+gem "base64"
+gem "bigdecimal"
+gem "webrick"
 
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed"
   gem "jekyll-seo-tag"
-  # gem "github-pages" # https://github.com/github/pages-gem
+  gem "github-pages" # https://github.com/github/pages-gem
 end
 
 # Uncomment the following line if developing on Windows: 

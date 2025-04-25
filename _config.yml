@@ -4,11 +4,13 @@
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  ## - jekyll-polyglot  ## 不在参考配置中
+  - jekyll-polyglot  ## 不在参考配置中
 
 # 语言设置
-## active_lang: "en"  ## 不在参考配置中
-## languages: ["en", "zh"]  ## 不在参考配置中
+languages: ["en", "zh-CN"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "sitemap"]
+parallel_localization: true
 
 # 排除不需要处理的文件
 exclude:
