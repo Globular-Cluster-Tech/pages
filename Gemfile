@@ -4,12 +4,12 @@ source "https://rubygems.org"
 gem "jekyll-remote-theme"
 gem "jekyll"
 gem "jekyll-agency"
-gem "jekyll-polyglot"
 gem "csv"
 gem "logger"
 gem "base64"
 gem "bigdecimal"
 gem "webrick"
+gem "faraday-retry"
 
 group :jekyll_plugins do
   gem "jekyll-feed"

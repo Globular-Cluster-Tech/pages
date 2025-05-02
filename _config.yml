@@ -1,63 +1,41 @@
 # _config.yml
 
-# 多语言支持配置
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-polyglot  ## 不在参考配置中
 
-# 语言设置
-languages: ["en", "zh-CN"]
-default_lang: "en"
-exclude_from_localization: ["javascript", "images", "css", "public", "sitemap"]
-parallel_localization: true
 
-# 排除不需要处理的文件
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - assets/css/style.css.map
+# # 排除不需要处理的文件
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor
+#   - assets/css/style.css.map
 
 # 网站基本信息
 url: "https://globularcluster.ca"
-baseurl: ""  # 如果网站在根目录，则为空
+baseurl: ""
 
 # 网站标题与描述
 title: "Globular Cluster Technology Software Limited"
 email: "support@globularcluster.ca"
 description: "提供服务：AWS云平台成本节省，公司IT业务优化，公司网站设计和建设"
-author:
-  name: "Kasen Li"
-  email: "support@globularcluster.ca"  ## 原始配置中 author 用 name/avatar/bio，不含 email
+author: "Kasen Li"
 
+logo:
+  path: logo.png
+
+# theme: jekyll-agency
 remote_theme: raviriley/agency-jekyll-theme  ## 与参考配置不同，但可用
+locale: "en-US"
 
-# 页面导航设置（主语言）
-## navigation:  ## 不在参考配置中，属于主题自定义配置
-##   - text: About
-##     url: "#about"
-##   - text: Services
-##     url: "#services"
-##   - text: Team
-##     url: "#team"
-##   - text: Contact
-##     url: "#contact"
+analytics:
+  google: #Google Analytics tracking code here
 
-# 联系方式
-## contact:  ## 不在参考配置中
-##   name: "Globular Cluster Technology Software Limited"
-##   address: "Vancouver, Canada"
-##   email: "support@globularcluster.ca"
+collections:
+  portfolio:
 
-# social:  ## 被注释了，可以略过
-#   github: yourusername
-#   linkedin: yourlinkedin
-#   twitter: yourtwitter
-
-github:
-  is_project_page: false  ## 这项可以保留，属于 GitHub 页面配置
 
 markdown: kramdown
 kramdown:

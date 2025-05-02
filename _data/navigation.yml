@@ -1,0 +1,56 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  nav:
+    - title: "Services"
+      section: services
+    - title: "Portfolio"
+      section: portfolio
+    - title: "About"
+      section: about
+    - title: "Team"
+      section: team
+    - title: "Contact"
+      section: contact
+    - title: "Theme Source"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Chinese
+# -------
+zh: &DEFAULT_ZH
+  nav:
+    - title: "服务"
+      section: services
+    - title: "案例"
+      section: portfolio
+    - title: "关于我们"
+      section: about
+    - title: "团队"
+      section: team
+    - title: "联系我们"
+      section: contact
+    - title: "主题来源"
+      url: https://github.com/raviriley/agency-jekyll-theme/
+zh-CN:
+  <<: *DEFAULT_ZH
+zh-TW:
+  <<: *DEFAULT_ZH
+zh-HK:
+  <<: *DEFAULT_ZH

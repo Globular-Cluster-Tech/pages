@@ -16,3 +16,14 @@
 
 提供服务：AWS云平台成本节省，公司IT业务优化，公司网站设计和建设
 
+
+# run on macos
+
+```sh
+brew install colima docker  
+
+colima start
+
+docker build -t jekyll . && docker run -it --rm -p 4000:4000 --name website jekyll
+
+```
