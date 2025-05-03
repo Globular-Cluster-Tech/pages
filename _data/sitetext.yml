@@ -32,7 +32,7 @@ en: &DEFAULT_EN
         icon: fab fa-wordpress
       - title: "Enterprise IT Desktop Operations & Maintenance"
         desc: "Provide timely and professional IT desktop support services for your employees, including hardware and software installation, configuration, troubleshooting, system maintenance, and upgrades. Ensure stable operation of employee workstations, resolve daily issues, and improve work efficiency."
-        icon: fab fa-desktop
+        icon: fab fa-grav
       - title: "Enterprise IT Business Operations & Maintenance"
         desc: "Offer continuous monitoring, maintenance, incident response, capacity management, and performance optimization services for your critical business systems (such as servers, databases, applications, networks, storage, etc.). Through proactive operations and rapid response mechanisms, we ensure high availability, high performance, and secure stable operation of your business systems."
         icon: fas fa-server
