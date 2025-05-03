@@ -13,16 +13,15 @@ en: &DEFAULT_EN
   nav:
     - title: "Services"
       section: services
-    - title: "Portfolio"
-      section: portfolio
+    # - title: "Portfolio"
+    #   section: portfolio
     - title: "About"
       section: about
-    - title: "Team"
-      section: team
+    # - title: "Team"
+    #   section: team
     - title: "Contact"
       section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -38,16 +37,14 @@ zh: &DEFAULT_ZH
   nav:
     - title: "服务"
       section: services
-    - title: "案例"
-      section: portfolio
+    # - title: "案例"
+    #   section: portfolio
     - title: "关于我们"
       section: about
-    - title: "团队"
-      section: team
+    # - title: "团队"
+    #   section: team
     - title: "联系我们"
       section: contact
-    - title: "主题来源"
-      url: https://github.com/raviriley/agency-jekyll-theme/
 zh-CN:
   <<: *DEFAULT_ZH
 zh-TW:

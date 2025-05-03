@@ -21,7 +21,10 @@ baseurl: ""
 title: "Globular Cluster Technology Software Limited"
 email: "support@globularcluster.ca"
 description: "提供服务：AWS云平台成本节省，公司IT业务优化，公司网站设计和建设"
-author: "Kasen Li"
+author:
+  name: "Kasen Lee"
+  email: "support@globularcluster.ca"
+  location: "Vancouver, BC, Canada"
 
 logo:
   path: logo.png
@@ -40,3 +43,5 @@ collections:
 markdown: kramdown
 kramdown:
   input: GFM
+
+formspree_form_path: "f/xpwdpldp"
