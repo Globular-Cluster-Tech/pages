@@ -1,17 +1,29 @@
 ---
 layout: page
-title: Page Not Found
+title: "404 - Page Not Found"
 background: grey
+permalink: /404.html
 ---
 
 <section class="page-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase">404 - Page Not Found</h2>
+        <h2 class="section-heading text-uppercase">404</h2>
         <h3 class="section-subheading text-muted">
-          The requested page could not be found.
+          {% if site.locale == "zh" %}
+            抱歉，您访问的页面不存在。
+          {% else %}
+            Sorry, the page you are looking for does not exist.
+          {% endif %}
         </h3>
+        <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.baseurl }}/">
+          {% if site.locale == "zh" %}
+            返回首页
+          {% else %}
+            Back to Home
+          {% endif %}
+        </a>
       </div>
     </div>
   </div>

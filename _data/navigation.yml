@@ -13,14 +13,12 @@ en: &DEFAULT_EN
   nav:
     - title: "Services"
       section: services
-    # - title: "Portfolio"
-    #   section: portfolio
     - title: "About"
       section: about
-    # - title: "Team"
-    #   section: team
     - title: "Contact"
       section: contact
+    - title: "中文"
+      url: "/zh/"
 
 en-US:
   <<: *DEFAULT_EN
@@ -36,15 +34,14 @@ en-AU:
 zh: &DEFAULT_ZH
   nav:
     - title: "服务"
-      section: services
-    # - title: "案例"
-    #   section: portfolio
+      url: "/zh/services"
     - title: "关于我们"
-      section: about
-    # - title: "团队"
-    #   section: team
+      url: "/zh/about"
     - title: "联系我们"
-      section: contact
+      url: "/zh/contact"
+    - title: "English"
+      url: "/"
+
 zh-CN:
   <<: *DEFAULT_ZH
 zh-TW:
