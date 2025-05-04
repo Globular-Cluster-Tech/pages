@@ -1,18 +1,28 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll-Dev",
-  "image": "mcr.microsoft.com/devcontainers/jekyll",
+  "name": "Jekyll-Dev (Optimized Cache)",
 
-  // Features to add to the dev container. More info: https://containers.dev/features.
+  // 改为使用自定义的 Dockerfile 来构建镜像
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".." // 指向你的项目根目录
+  },
+
+  // Features 可以保留，但如果 Feature 的内容（比如包列表）经常变，
+  // 最好将它们移到 Dockerfile 中（如上面 Dockerfile 所示，apt-packages 已移入）
+  // Prettier Feature 可以保留，因为它相对独立稳定
   "features": {
-    "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
-      "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
-    },
+    // 我们已经将 apt-packages 的安装移到了 Dockerfile 中
+    // "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+    //   "packages": "build-essential,imagemagick,inotify-tools,jupyter-nbconvert,procps,ruby-full,zlib1g-dev"
+    // },
     "ghcr.io/devcontainers-contrib/features/prettier:1": {}
   },
 
-  // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
+  // 自动转发 Jekyll 服务器端口
+  "forwardPorts": [4000],
+
+  // 在 VS Code 连接到容器后运行的命令，用于启动 Jekyll 服务器
+  // 这不影响镜像构建速度，但会影响你看到网站的速度
   "postAttachCommand": "bundle exec jekyll serve --watch --port=4000 --host=0.0.0.0 --livereload --verbose --trace --force_polling",
 
   "customizations": {
@@ -23,9 +33,16 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "prettier.configPath": ".prettierrc",
         "editor.formatOnSave": true
+        // 其他 VS Code 设置
       }
     }
   },
 
+  // 指定非 root 用户
   "remoteUser": "vscode"
+
+  // 如果需要挂载额外的卷，可以在这里添加
+  // "volumes": [
+  //   "local-volume:/path/in/container"
+  // ]
 }

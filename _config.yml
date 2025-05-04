@@ -25,12 +25,6 @@ exclude_from_localization: ["javascript", "public", "sitemap", "assets", "_sass"
 parallel_localization: true
 
 
-# 语言特定的配置
-zh:
-  title: "球状星团科技软件有限公司"
-  description: "通过专业的IT解决方案，为您的业务提供云优化、业务效率和数字化转型支持。"
-  baseurl: "/zh"
-
 # # 排除不需要处理的文件
 exclude:
   - Gemfile
@@ -54,8 +48,8 @@ author: "Kasen"
 logo:
   path: "/logo.png"
 
-# theme: jekyll-agency
-remote_theme: raviriley/agency-jekyll-theme  ## 与参考配置不同，但可用
+theme: jekyll-agency
+# remote_theme: raviriley/agency-jekyll-theme  ## 与参考配置不同，但可用
 
 
 analytics:
@@ -64,7 +58,9 @@ analytics:
 collections:
   portfolio:
     output: true
-
+#   projects:
+#     output: true
+#     permalink: /:collection/:title/
 
 markdown: kramdown
 kramdown:

@@ -11,11 +11,12 @@ gem "base64"
 gem "bigdecimal"
 gem "webrick"
 gem "faraday-retry"
+gem "kramdown-parser-gfm"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-seo-tag"
-  gem "github-pages" # https://github.com/github/pages-gem
+  # gem "github-pages" # https://github.com/github/pages-gem
 end
 
 # Uncomment the following line if developing on Windows: 

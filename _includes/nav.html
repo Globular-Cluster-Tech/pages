@@ -45,7 +45,7 @@
         </li>
         {%- endfor -%}
       {% else %}
-        {%- for link in site.data.navigation.nav -%}
+        {%- for link in site.data.navigation[site.locale].nav -%}
         <li class="nav-item">
           {%- if link.url -%}
           <a class="nav-link js-scroll-trigger" href="{{ link.url }}"
